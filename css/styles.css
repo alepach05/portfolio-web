@@ -1,0 +1,230 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+
+/* Estilos para el contenido */
+main {
+    padding: 20px 0;
+}
+
+.container-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+
+/* Estilos específicos para la página de inicio */
+#inicio {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#inicio h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#inicio p {
+    color: #666;
+}
+
+.perfil img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+}
+
+
+/* Estilos específicos para la página de portafolio */
+#portafolio h2 {
+    color: #333;
+    text-align: center;
+}
+
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proyecto {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    width: calc(33.33% - 40px); /* 3 columnas (margen 40px) */
+    box-sizing: border-box;
+}
+
+.proyecto img {
+    max-width: 100%;
+}
+
+
+/* Estilos específicos para la página de habilidades */
+#habilidades h2 {
+    color: #333;
+    text-align: center;
+}
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.habilidad {
+    text-align: center;
+    width: calc(25% - 20px); /* 4 columnas (margen 20px) */
+    margin-bottom: 20px;
+}
+
+.habilidad h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.habilidad img {
+    max-width: 80%;
+}
+
+
+/* Estilos específicos para la página de contacto */
+#contacto h2 {
+    color: #333;
+    text-align: center;
+}
+
+#formulario-contacto {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#formulario-contacto label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#formulario-contacto input[type="text"],
+#formulario-contacto input[type="email"],
+#formulario-contacto textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#formulario-contacto textarea {
+    height: 150px;
+}
+
+#formulario-contacto button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#formulario-contacto button:hover {
+    background-color: #ffc107;
+}
+
+
+/* Estilos para los iconos de redes sociales */
+.redes-sociales {
+    text-align: center;
+}
+
+.redes-sociales ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.redes-sociales ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.redes-sociales ul li a {
+    color: black;
+    font-size: 24px;
+}
+
+.redes-sociales ul li a:hover {
+    color: #ffc107;
+}
+
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    background-color: #222;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px 0;
+    color: #fff;
+}
+
+
+/* Dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .proyecto {
+        width: calc(100% - 0px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .habilidad {
+        width: calc(100% - 0px);
+    }
+}
